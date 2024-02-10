@@ -1,0 +1,247 @@
+﻿/* Apply styles to all tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/* Apply styles to table headers */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Apply styles to table cells */
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Apply styles to form inputs */
+input[type="text"], 
+input[type="password"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Apply styles to submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Apply styles to links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Apply styles to labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Apply styles to the form container */
+form {
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the form container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Apply styles to the search button */
+#searchButton,
+#cancelButton {
+    margin-top: 10px;
+}
+
+/* Apply styles to the table footer */
+tfoot th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Apply styles to the table footer cells */
+tfoot td {
+    background-color: #f2f2f2;
+}
+
+/* Apply styles to the table hover effect */
+table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Apply styles to the table responsive design */
+@media only screen and (max-width: 768px) {
+    table {
+        overflow-x: auto;
+    }
+}
+
+/* Apply styles to the form container on smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Apply styles to the search field label */
+#searchFieldLabel {
+    margin-right: 10px;
+}
+
+
+/* Apply styles to the table header when fixed */
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+/* Apply styles to the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the search label */
+.search-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Apply styles to the search input container */
+.search-input-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* Apply styles to the search input */
+.search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the search button */
+.search-button  {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Apply styles to the cancel button */
+.cancel-button {
+    padding: 8px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Apply styles to the table container */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Apply styles to the table row stripes */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Apply styles to the table cell text alignment */
+td {
+    text-align: center;
+}
+
+/* Apply styles to the form error message */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Apply styles to the success message */
+.success-message {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* Apply styles to the dropdown */
+.dropdown {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    font-size: 14px; /* Font size */
+}
+
+    /* Style the dropdown arrow */
+    .dropdown::after {
+        content: '\25BC'; /* Unicode character for down arrow */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+
+    /* Style the dropdown options */
+    .dropdown option {
+        background-color: #fff; /* Background color */
+        color: #333; /* Text color */
+        font-size: 14px; /* Font size */
+    }
+
+    /* Style the dropdown when hovered */
+    .dropdown:hover {
+        border-color: #007bff; /* Border color */
+    }
+
+    /* Style the dropdown when focused */
+    .dropdown:focus {
+        border-color: #007bff; /* Border color */
+        box-shadow: 0 0 3px #007bff; /* Box shadow */
+    }
+
+
+.disabledButton {
+    opacity: 0.5; /* Lower the opacity to indicate disabled state */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+    /* Optionally, you can add other styles such as changing the background color */
+    background-color: lightgray;
+    /* You can also adjust padding, border, font color, etc. to match your design */
+}
